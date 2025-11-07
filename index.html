@@ -1,47 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gonzales, Mharvinne — Computer Science Student</title>
-  <meta name="description" content="Your Name — projects, code, and contact. Open-source portfolio." />
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      font-family: "Inter", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 700px;
+      background-color: #1a1a1a;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.2rem;
+      color: #fff;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+      color: #f5f5f5;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.3rem;
+    }
+
+    p, li, a {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #80caff;
+    }
+
+    .projects li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    .footer span {
+      color: #ff4d4d;
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Your Name</h1>
-      <p class="subtitle">Computer Science Student · Open-source Developer</p>
-    </header>
+  <div class="container">
+    <h1>Your Name</h1>
+    <p>Computer Science Student · Open-source Developer</p>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Short one-liner about you and the kind of projects you build. (2–3 sentences)</p>
-    </section>
+    <h2>About</h2>
+    <p>
+      Short one-liner about you and the kind of projects you build.
+      (2–3 sentences that show your interests or focus areas.)
+    </p>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li>
-          <strong><a href="https://github.com/yourusername/project-1" target="_blank" rel="noopener">Project One</a></strong>
-          — one-line summary, tech used (e.g., Python, Flask).
-        </li>
-        <li>
-          <strong><a href="https://github.com/yourusername/project-2" target="_blank" rel="noopener">Project Two</a></strong>
-          — short summary, demo link if available.
-        </li>
-      </ul>
-      <p><a href="https://github.com/yourusername" target="_blank" rel="noopener">View more on GitHub →</a></p>
-    </section>
+    <h2>Selected Projects</h2>
+    <ul class="projects">
+      <li>
+        <a href="#">Project One</a> — one-line summary, tech used (e.g., Python, Flask).
+      </li>
+      <li>
+        <a href="#">Project Two</a> — short summary, demo link if available.
+      </li>
+    </ul>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a> · GitHub: <a href="https://github.com/gzls-hcwre">yourusername</a></p>
-    </section>
+    <p><a href="#">View more on GitHub →</a></p>
 
-    <footer>
-      <p>Built with ❤️ · <small>MIT license</small></p>
-    </footer>
-  </main>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a> · GitHub: <a href="#">yourusername</a></p>
+
+  </div>
 </body>
 </html>
