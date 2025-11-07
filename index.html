@@ -24,6 +24,14 @@
     overflow: hidden;
   }
 
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 30%, rgba(180, 100, 255, 0.15) 0%, transparent 70%);
+    z-index: 0;
+
   /* --- vignette --- */
   body::after {
     content: "";
@@ -147,4 +155,5 @@
   </div>
 </body>
 </html>
+
 
