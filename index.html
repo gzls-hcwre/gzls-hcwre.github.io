@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
-  /* --- Background --- */
+  /* --- Base --- */
   body {
     margin: 0;
-    font-family: "Inter", "Poppins", sans-serif;
-    color: #eaeaea;
+    padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle at top, #14121f, #0a0812 80%);
+    color: #e5e5e5;
+    font-family: "DM Sans", "Inter", sans-serif;
+    letter-spacing: 0.3px;
   }
 
   /* --- Container --- */
   .container {
-    background: rgba(10, 10, 10, 0.6); /* black with slight transparency */
-    backdrop-filter: blur(8px);
+    background: rgba(15, 15, 18, 0.55);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    padding: 3rem;
-    width: 70%;
+    width: 65%;
     max-width: 700px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 3rem 3.5rem;
     text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   }
 
   h1 {
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
 
   h2 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     font-weight: 500;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+    color: #d9d9d9;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
     display: inline-block;
     padding-bottom: 0.25rem;
+    letter-spacing: 0.6px;
   }
 
   p {
-    color: #cfcfcf;
+    color: #bdbdbd;
     line-height: 1.6;
     font-size: 0.95rem;
     margin-top: 1rem;
   }
 
   a {
-    color: #9b7bff;
+    color: #b8aaff;
     text-decoration: none;
+    transition: 0.3s ease;
   }
 
   a:hover {
+    color: #ffffff;
     text-decoration: underline;
   }
 
+  /* --- Icons --- */
   .icons {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1.8rem;
+    margin-top: 1.2rem;
   }
 
   .icons img {
-    width: 28px;
-    height: 28px;
-    filter: invert(0.9);
-    transition: 0.3s;
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    filter: invert(1);
+    transition: 0.3s ease;
   }
 
   .icons img:hover {
+    opacity: 1;
     transform: scale(1.1);
-    filter: invert(1);
   }
 </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Your Name</h1>
@@ -86,20 +101,24 @@
 
     <h2>About</h2>
     <p>
-      I’m a developer passionate about open-source projects, minimal design, and clean code.
-      I enjoy building simple, human-centered interfaces and automating useful tools.
+      I’m a developer passionate about clean, efficient design and open-source collaboration.
+      I enjoy exploring elegant interfaces, meaningful automation, and creative experiments in code.
     </p>
 
     <h2>Selected Projects</h2>
     <p>
-      <a href="#">Project One</a> — Python + Flask web app for data visualization.<br />
-      <a href="#">Project Two</a> — Minimalist front-end template built with HTML + CSS.
+      <a href="#">Project One</a> — Web visualization tool built with Python & Flask.<br>
+      <a href="#">Project Two</a> — Responsive front-end template using HTML & CSS.
     </p>
 
     <h2>Contact</h2>
     <div class="icons">
-      <a href="mailto:you@example.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" /></a>
-      <a href="https://github.com/yourusername" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" /></a>
+      <a href="mailto:you@example.com" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/minutemailer.svg" alt="Email">
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+      </a>
     </div>
   </div>
 </body>
