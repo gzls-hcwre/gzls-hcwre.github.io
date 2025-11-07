@@ -1,3 +1,8 @@
+body {
+  background: radial-gradient(circle at top center, #0b0b16 0%, #0a0812 60%, #06050c 100%);
+  color: #dcd8ff;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -19,3 +24,4 @@ body::before {
   from { background-position: 0 0; }
   to { background-position: 1000px 1000px; }
 }
+
